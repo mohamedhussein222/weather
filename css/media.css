@@ -1,0 +1,93 @@
+@media screen and (max-width:768px){
+   .contain-head{
+    width: 100% !important;
+   }
+   .mmm{
+    width: 100% !important;
+   }
+   .nav-link{
+    justify-content: center !important;
+    display: flex;
+  
+   }
+   .navbar-toggler{
+    background-color: antiquewhite;
+   }
+         .navbar-toggler-icon{
+   color: white !important;
+   }
+      footer.container-lg {
+    width: 100% !important;
+   }
+   .respons{
+    width: 100% !important;
+    text-align: center !important;
+
+   }
+
+   .res-submit{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+    padding: 0px 10px;
+    color: white;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    background: rgb(0, 154, 216);
+    border-radius: 30px;
+   }
+   .res-input{
+    padding: 20px 50px 20px 20px !important;
+    width: 100%;
+      color: white;
+      background: rgb(30, 32, 43);
+  border: none;
+  border-radius: 20px;
+   }
+   .navbar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 99999999999999;
+   }
+   .icons-footer{
+    margin: auto !important;
+    width: 75% !important;
+    padding: 20px 0px !important;
+   }
+   .image{
+    margin-top: 15px !important;
+    overflow: hidden !important;
+   }
+
+
+   
+   .testi{
+    border-top-left-radius: 15px !important;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 0px;
+
+    
+   }
+   .item-rad{
+    border-top-left-radius: 0px;
+  
+   }
+   .weather-two{
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 0px;
+   }
+  .res-submit{
+    padding: 5px 15px !important;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+  }
+  
+}
