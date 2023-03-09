@@ -1,15 +1,4 @@
  var all = [];
-var req =new XMLHttpRequest(); 
-req.open("get" , "https://api.weatherapi.com/v1/forecast.json?key=f1622f03689f4295b1b205803232002&q=cairo&days=3")
-req.send();
-req.addEventListener("readystatechange" , function(){
-    if(req.readyState ==4){
-      all = JSON.parse(req.response) ; 
-        console.log(req.response);
-        display();
-    }
-})
-
 function getData(test){
   var req =new XMLHttpRequest(); 
 req.open("get" , `https://api.weatherapi.com/v1/forecast.json?key=f1622f03689f4295b1b205803232002&q=${test}&days=3`)
@@ -17,19 +6,34 @@ req.send();
 req.addEventListener("readystatechange" , function(){
     if(req.readyState ==4){
       all = JSON.parse(req.response) ; 
-        console.log(req.response);
         display();
     }
 })
 }
- 
-
-
+getData("cairo");
+var parentContainer= document.createElement("div");
+parentContainer.classList.add("container-lg","contain-head","py-5","mt-3","w-75")
+document.querySelector(".image").append(parentContainer);
+ var myDiv = document.createElement("div");
+ myDiv.classList.add("inputs" , "position-relative");
+ document.querySelector(".contain-head").append(myDiv);
+var input1 =  document.createElement("input");
+input1.classList.add("position-relative" , "mmm");
+input1.setAttribute("placeholder" , "Find your location...");
+input1.setAttribute("type" , "text");
+input1.setAttribute("id" ,"search");
+document.querySelector(".inputs").append(input1);
+var input2  = document.createElement("input");
+input2.setAttribute("type" ,"button");
+input2.setAttribute("class" , "find");
+input2.setAttribute("value" , "find") ; 
+input2.setAttribute("id" , "submit");
+document.querySelector(".inputs").append(input2)
+var row1 = document.createElement("div");
+row1.classList.add("row" , "row-rad","py-5", "g-0" );
+document.querySelector(".contain-head").append(row1) ;
 function display (){
-  
-
   var cartona = "" ;
-  
      cartona+=`
      <div class="col-md-4 ">
      <div class="item weather-one testi">
@@ -44,7 +48,7 @@ function display (){
         </div>
         <div class="d-flex weather-one ">
         <div class="num">${all.current.temp_c}<sup>o</sup>C</div>
-         <img src="https://cdn.weatherapi.com/weather/64x64/night/113.png" class=" w-25" />
+         <img src="https://${all.current.condition.icon}"  />
           </div>
          <div class="custom">${all.current.condition.text}</div>
        
@@ -125,9 +129,6 @@ function display (){
  subscribe.addEventListener("dblclick" , function(){
   subscribe.style.backgroundColor="#6497B0";
  })
-
- 
-
 let mmm = document.querySelector(".mmm");
 
 
@@ -138,3 +139,8 @@ find.addEventListener("click" , function(){
   
   
  })
+
+
+
+
+// 
