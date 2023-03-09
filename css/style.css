@@ -178,3 +178,17 @@ color: white;
 .icons-item i {
   color: #009ad8;
 }
+
+
+
+.nav-link{
+  justify-content: center !important;
+  display: flex;
+
+ }
+ .navbar-toggler{
+  background-color: antiquewhite;
+ }
+       .navbar-toggler-icon{
+ color: white !important;
+ }
