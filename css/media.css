@@ -2,6 +2,9 @@
    .contain-head{
     width: 100% !important;
    }
+   .navbar-container{
+    width: 100% !important;
+   }
    .mmm{
     width: 100% !important;
    }
@@ -9,6 +12,10 @@
     justify-content: center !important;
     display: flex;
   
+   }
+
+   .icons{
+    padding-bottom: 40px !important;
    }
    .navbar-toggler{
     background-color: antiquewhite;
@@ -88,6 +95,58 @@
     top: 0px;
     right: 0px;
     bottom: 0px;
+  }
+.fooy{
+  margin: auto !important;
+  text-align: center !important;
+  width: 50% !important;
+}
+
+
+  /* ======================== */
+  
+}
+/* =============================== */
+
+
+@media screen and (min-width:0px) and (max-width:285px){
+  
+
+  .navbar-container{
+    width: 100% !important;
+   }
+
+   .inputs{
+    margin-top: 30px !important;
+   }
+   nav-link{
+    justify-content: center !important;
+    display: flex;
+  
+   }
+
+   .icons{
+    padding-bottom: 40px !important;
+   }
+   .navbar-toggler{
+    background-color: antiquewhite;
+   }
+   .div{
+    width: 50% !important;
+   }
+  .logo-content{
+    display: none !important;
+  }
+  
+}
+
+@media screen and (max-width:992px){
+
+  .fooy{
+    margin: auto !important;
+    text-align: center !important;
+    width: 75% !important;
+    padding-top: 20px !important;
   }
   
 }
